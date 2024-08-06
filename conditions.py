@@ -1,5 +1,5 @@
 # 1. if statement
-num = int(input("Number: "))
+num = int(input("Number: "))  # int converts the input to integer
 if (num % 2) == 0:
     print("{} is even".format(num))
 else:
@@ -7,7 +7,7 @@ else:
 
 # 2. if-else statement
 
-    n = int(input("Enter a number: "))
+n = int(input("Enter a number: "))
 
 if (n>0):
   print("n is positive")
