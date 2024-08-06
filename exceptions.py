@@ -1,8 +1,13 @@
 import sys
 
+try:
+   x = int(input("x: "))
+   y = int(input("y: "))
+except ValueError:
+  print("Invalid input. Please enter a number.")
+  sys.exit(1)
 
-x = int(input("x: "))
-y = int(input("y: "))
+
 
 # result = x / y
 
@@ -10,12 +15,6 @@ y = int(input("y: "))
 
 
 # when x is 0 or y is 0
-# try:
-#     result = x / y
-# except ZeroDivisionError:
-#     print("You can't divide by zero!")
-# else:
-#     print(result)
 
 
 try:
@@ -24,4 +23,4 @@ except ZeroDivisionError:
     print("You can't divide by zero!")
     sys.exit(1)
 
-print(f"{x} divided by {y} is {result}")
+print(f"{x} / {y} i : {result}")
