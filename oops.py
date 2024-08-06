@@ -33,7 +33,7 @@ for person in people:
   if flight.add_passengers(person):
       print(f"{person} is added to the flight")
   else:
-      print(f"{person} is not added to the flight")
+      print(f"No Seats Available for {person}")
 
 print(flight.passengers)
 
@@ -41,5 +41,5 @@ print(flight.passengers)
 # John is added to the flight
 # Mary is added to the flight
 # Peter is added to the flight
-# Anna is not added to the flight
+# No Seats Available for Anna
 # ['John', 'Mary', 'Peter']
